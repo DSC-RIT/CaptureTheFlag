@@ -1,1 +1,2 @@
 dsc_ctf_121.html -> landing page
+Flag format: awrXXXXXXXXXXX4
