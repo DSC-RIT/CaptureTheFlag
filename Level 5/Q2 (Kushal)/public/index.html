@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="eval()">Evaluate</button>
+	
+	<div id="result">
+
+	</div>
+	
+	<div>
+		<h1>
+			Source code:
+		</h1>
+		<img src="./source.png">
+		
+	</div>
+</body>
+<script>
+	const params = new URLSearchParams(window.location.search)
+	let s = params.get('s')
+	let t = params.get('t')
+	
+	let div1 = document.createElement('div')
+	let div2 = document.createElement('div')
+
+	div1.innerHTML = s
+	div2.innerHTML = t
+
+	document.querySelector('body').prepend(div1)
+	document.querySelector('body').prepend(div2)
+
+	async function eval(){
+		const response = await fetch('/eval',{
+			method:"POST",
+			headers:{
+				"Content-type":"application/json"
+			},
+			body:JSON.stringify({s:s,t:t})
+		})
+		const body = await response.text()
+		document.getElementById("result").innerHTML = body
+		console.log(body)
+	}
+</script>
+</html>
