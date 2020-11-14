@@ -24,9 +24,12 @@ app.post("/login", (req, res) => {
     username === config.solution.username &&
     password === config.solution.password
   ) {
-    res.send("Successful!");
+    res.send(
+      "<h1>Successfully Logged in!</h1><h2>Here's the flag:</h2> FLAG{b075_c4n_16n0r3_7h3_rul35}"
+    );
+  } else {
+    res.redirect("/");
   }
-  res.redirect("/");
 });
 
 app.listen(config.PORT, () =>
