@@ -4,4 +4,4 @@ Note: Error - "It seems your browser does not support running Unity WebGL conten
 In case of above error popping up while navigating to index.html page on any browser. Please download and use Mozilla Firefox then do the following 2 steps:
 1) Type "about:config" in the navigation bar
 2) Now type "privacy.file_unique_origin" and click that parameter to change it to "false"
-This will run the game perfectly fine in Mozilla Forefox (Recommended)
+This will run the game perfectly fine in Mozilla Firefox (Recommended)
