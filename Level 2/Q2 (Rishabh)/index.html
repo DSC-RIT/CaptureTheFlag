@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.js"></script>
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <div class="mytable">
+        <img class="bgimage" src="turquoisebg.png" alt="TurquoiseBG">
+
+        <div class="cards">
+            
+            <div class="card">
+              <header>
+                <h2>Step 1</h2>
+              </header>
+              <img src="sus.png" alt="BlueKindaSus">
+              
+              <div class="body">
+                <p>Sometimes to unleash the flag we have to explore!</p>
+                <p>Oh you want a hint? Well... um... Its hidden where your eyes can't find it. But if you do find it, you can be sure to proceed to step 2.</p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <header>
+                <h2>Step 2</h2>
+              </header>
+              <img src="seed.jpg" alt="Go Green!">
+
+              <div class="body">
+                <p>Global Warming is a very big issue. Please plant seeds. If you found the answer to step1. Plant it as a seed.</p>
+                <form>
+                    Enter Seed: <input  id="seed" type="text" name="seed" placeholder="Enter Seed">
+                    <input type="submit" onclick="PlantSeed()">
+                </form>
+              </div>
+            </div>  
+
+            <div class="card">
+              <header>
+                <h2>Step 3</h2>
+              </header>
+              <img src="hashfunction.jpg" alt="Get the Hashed Output">
+
+              <div class="body">
+                <p>If you correctly solved Step 1 and Step 2. Then go to the following website: </p>
+                <a href="https://www.tools4noobs.com/online_tools/hash/">Online Hash Calculator!</a>
+                <p>Choose SHA1 Algorithm and enter the following: "(Answer from Step 1)+(Answer from Step 2)" without the brackets and without the + sign.</p>
+                <p>Enter the Output Here: </p>
+                <form>
+                    Enter Hash Output: <input  id="myhash" type="text" name="myhash" placeholder="Enter Hash">
+                    <input type="submit" onclick="DisplayFlag()">
+                </form>
+              </div>
+            </div>
+
+          </div>
+    </div>
+</body>
+</html>
