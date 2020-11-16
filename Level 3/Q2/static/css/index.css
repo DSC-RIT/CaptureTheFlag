@@ -1,0 +1,109 @@
+body {
+    font-family: 'Neuton', serif;
+    font-family: 'Poppins';
+    /* background-color: #97bb35; */
+    background-color: lightblue;
+    font-size: large;
+}
+
+
+
+.navbar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 10;
+    color: #000;
+}
+
+.fix {
+	width:100%;
+    position: fixed; 
+	top: 0;
+	left: 0vw;
+    z-index: 10;
+    color: #000;
+	border-radius:5px;
+}
+
+.header .jumbotron{
+    background-size:cover;
+    /* background-color: #005582; */
+    background-color: #fff;
+    margin-top: 9em;
+    border-radius: 10px;
+    height: 20em;
+    width: 6em;
+    width:80%;
+    color: #000;
+    text-align: left; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.howtouse .jumbotron {
+    margin-top: 3em;
+    border-radius: 10px;
+    padding-top: 1em;
+    height: 20em;
+    width: 90%;
+    /* background-color: transparent; */
+    padding: 2em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login .jumbotron {
+    margin-top: 3em;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sponsor .jumbotron{
+    margin-top: 3em;
+    border-style: none;
+    border-radius: 10px;
+    height: 15em;
+    width: 90%;
+    padding-top: 1em;
+    /* background-color: transparent; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer .jumbotron {
+    /* background-color: #b5b462; */
+    background-color: #97bb35;
+    margin-top: 1em;
+    border-style: none; 
+    border-radius: 10px;
+    width:98%;
+    height: 5em;
+    color: #005582;
+    bottom: 0;
+    left: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1010px) {
+    .closer{
+        margin-left: 0em;
+    }
+
+    .howtouse .jumbotron {
+        margin-top: 6em;
+        border-radius: 10px;
+        padding-top: 1em;
+        height: 50em;
+        width: 90%;
+        /* background-color: transparent; */
+        border: 2px dashed #fff;
+        padding: 2em;
+        border: none;
+        font-weight: bold;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+.random{
+    salt:conte;
+}
