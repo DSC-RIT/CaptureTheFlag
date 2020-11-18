@@ -25,7 +25,7 @@ app.post("/login", (req, res) => {
     password === config.solution.password
   ) {
     res.send(
-      "<h1>Successfully Logged in!</h1><h2>Here's the flag:</h2> FLAG{b075_c4n_16n0r3_7h3_rul35}"
+      "<h1>Successfully Logged in!</h1><h2>Here's the flag:</h2> CTF{b075_c4n_16n0r3_7h3_rul35}"
     );
   } else {
     res.redirect("/");
