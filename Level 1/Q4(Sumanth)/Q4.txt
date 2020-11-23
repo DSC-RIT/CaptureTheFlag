@@ -1,4 +1,4 @@
-The next flag is related to our instagram page, https://www.instagram.com/dscmsrit/
-The speciality of the flag is its uniqueness. 
-FLAG FORMAT:     _2_1_1_6_ _5
+How is the poster uploaded on our instagram page? 
+
+FLAG FORMAT:     CTF{...}
 		
