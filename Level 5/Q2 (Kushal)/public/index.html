@@ -6,6 +6,15 @@
 	<title>Document</title>
 </head>
 <body>
+	Rohit has created a route which is protecting your flag. He claims it is unbeatable. 
+	It takes two values <i>s</i> and <i>t</i>, prepends a string stored in variable <i>salt</i> to them and 
+	hashes them using MD5 algorithm. It gives the flag if and only if the two hashes matches.
+	Rohit is so confident it can't be beaten that he even shared it with us! It's upto you to show him
+	how wrong he is and get the flag!<br>
+	You can use the interface provided by us to test his endpoint.
+	<br>
+	<input type="text" name="s" id="s" placeholder="s">
+	<input type="text" name="t" id="t" placeholder="t">
 	<button onclick="eval()">Evaluate</button>
 	
 	<div id="result">
@@ -21,20 +30,11 @@
 	</div>
 </body>
 <script>
-	const params = new URLSearchParams(window.location.search)
-	let s = params.get('s')
-	let t = params.get('t')
 	
-	let div1 = document.createElement('div')
-	let div2 = document.createElement('div')
-
-	div1.innerHTML = s
-	div2.innerHTML = t
-
-	document.querySelector('body').prepend(div1)
-	document.querySelector('body').prepend(div2)
-
 	async function eval(){
+		const s = document.getElementById("s").value
+		const t = document.getElementById("t").value
+		document.getElementById("result").innerHTML = ""
 		const response = await fetch('/eval',{
 			method:"POST",
 			headers:{
