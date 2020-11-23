@@ -26,7 +26,7 @@ module.exports = async () => {
 
   //Adds random data
   /*
-  for (let i = 0; i < 79; i++) {
+  for (let i = 0; i < 8; i++) {
     const username = uniqueNamesGenerator({
       dictionaries: [adjectives, colors, animals],
     });
@@ -39,8 +39,8 @@ module.exports = async () => {
 
     const r = await new_user.save();
     console.log(i);
-  }*/
-
+  }
+*/
   //Adds solution user
   /*
   const username = uniqueNamesGenerator({
