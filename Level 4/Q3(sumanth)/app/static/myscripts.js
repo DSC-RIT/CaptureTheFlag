@@ -1,0 +1,1 @@
+sessionStorage.setItem('magic([3,23,21,5,27,6,17],[6,15,20,8,11,10,20])','EXAMPLE');
