@@ -1,0 +1,9 @@
+Set A: 
+Username: 	DSCAdmin
+Password: 	nO!Pa55W0rDx
+Flag:		CTF{1_2_3_You_Is_free}	
+
+Set B:
+Username: 	DSC_Admin
+Password: 	n1cE_pA55wOrD
+Flag:		CTF{1_2_#Hash_ILoveCash}	

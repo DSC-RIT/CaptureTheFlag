@@ -1,6 +1,6 @@
 # Level 2 Question 1
 
-Page1.html is the landing page.
+index.html is the landing page.
 
 Note: Error - "It seems your browser does not support running Unity WebGL content from file:// urls. Please upload it to an http server, or try a different browser." 
 In case of above error popping up while navigating to index.html page on any browser. Please download and use Mozilla Firefox then do the following 2 steps:

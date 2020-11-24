@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/FinalBuild.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/SetBBuild.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
     <div class="webgl-content">
       <p><h1>DSC Game Night!</h1></p>
       <p><span id="welcomeuser"></span> Logged In Successfully...</p>
-      <p>Play the game! Find the Chest! Interact with it and then press the Unleash Flag Button to find the flag! All the best!</p>
+      <p>Play the game! Find the Chest! Press the Unleash Flag Button and then Interact with the chest to find the flag! All the best!</p>
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
@@ -31,7 +32,7 @@
             unityInstance.SendMessage('InteractColliderChest','CheckChestPass',localStorage.getItem('item2'));
         }
       </script>
-      <div><button type="button" onclick="checkUser()">Unleash Flag!</button></div>
+      <div><button type="button" class="button button1" onclick="checkUser()">Unleash Flag!</button></div>
     </div>
   </body>
 </html>

@@ -3,7 +3,6 @@ const path = require("path");
 const Buffer = require("safe-buffer").Buffer;
 const bodyParser = require("body-parser");
 const config = require("./utils/config");
-
 const app = express();
 
 app.use((req, res, next) => {
