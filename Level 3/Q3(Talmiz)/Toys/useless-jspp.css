@@ -110,7 +110,7 @@ abstract class AbstractContact implements HasEmail, HasPhoneNumber {
  
 class ConcreteContact extends AbstractContact {
 //^^^^^^^ this one line with the semicolon is CTF-2{}
-// If you're asking "what semicolon?", then your still reading JS++ OR JS that's way too new for Bobby's IE, so go for the oldest version of JS ;)
+// If you're asking "what semicolon?", then your still reading JS++ OR JS that's way too new for Bobby's Internet Explorer ;)
   constructor(
     public phone: number, // must happen before non property-parameter arguments
     name: string,
