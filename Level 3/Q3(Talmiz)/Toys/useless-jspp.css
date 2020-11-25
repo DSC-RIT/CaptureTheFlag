@@ -1,34 +1,24 @@
 // JS++
-let dd: { houseNumber: number; streetName?: string };
-dd = {
-  houseNumber: 33
-};
+
 
 interface Address {
   houseNumber: number;
   streetName?: string;
 }
-let ee: Address = { houseNumber: 33 };
 
-
-/**
- * (14) Union types
- * Sometimes we have a type that can be one of several things
- */
-
-export interface HasPhoneNumber {
+interface HasPhoneNumber {
   name: string;
   phone: number;
 }
 
-export interface HasEmail {
+interface HasEmail {
   name: string;
   email: string;
 }
 
-export interface HasBrain {
+interface HasBrain {
     name: string;
-    hasBrain: "CTF-1{M3Q_@4#66LD$}";
+    hasBrain: "key1{M3Q_@4#66LD$}";
 }
 
 let contactInfo: HasEmail | HasPhoneNumber =
@@ -59,10 +49,8 @@ let otherContactInfo: HasEmail & HasPhoneNumber = {
 otherContactInfo.name; // NOTE: we can access anything on _either_ type
 otherContactInfo.email;
 otherContactInfo.phone;
-const zzz: any = {} as never;
 
-
-export class Contact implements HasEmail {
+class Contact implements HasEmail {
   email: string;
   name: string;
   constructor(name: string, email: string) {
@@ -109,10 +97,10 @@ abstract class AbstractContact implements HasEmail, HasPhoneNumber {
  */
  
 class ConcreteContact extends AbstractContact {
-//^^^^^^^ this one line with the semicolon is CTF-2{}
-// If you're asking "what semicolon?", then your still reading JS++ OR JS that's way too new for Bobby's Internet Explorer, Find a way to convert the output using subtle clues! ;)
+//^^^^^^^ this one line above with the semicolon is key2
+// If you're asking "which line? what semicolon?", then your still reading JS++ OR JS that's way too new for Bobby's Internet Explorer, Find a way to convert it using subtle clues! 
   constructor(
-    public phone: number, // must happen before non property-parameter arguments
+    public phone: number, 
     name: string,
     email: string
   ) {
@@ -123,3 +111,4 @@ class ConcreteContact extends AbstractContact {
     console.log("sending an email");
   }
 }
+// Make sure you copy the whole file
