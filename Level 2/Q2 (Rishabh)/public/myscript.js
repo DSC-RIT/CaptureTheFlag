@@ -22,5 +22,7 @@ async function DisplayFlag() {
   const body = await response.json();
   if (body.flag) {
     alert(body.flag);
+  } else {
+    alert("Wrong hash!");
   }
 }
