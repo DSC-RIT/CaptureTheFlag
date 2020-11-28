@@ -23,6 +23,6 @@ async function DisplayFlag() {
   if (body.flag) {
     alert(body.flag);
   } else {
-    alert("Wrong hash!");
+    alert("Sorry... You got either the 1st step or 2nd step's answer wrong.");
   }
 }
