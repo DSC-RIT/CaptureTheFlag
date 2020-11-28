@@ -18,7 +18,7 @@ interface HasEmail {
 
 interface HasBrain {
     name: string;
-    hasBrain: "key1{M3Q_@4#66LD$}";
+    hasBrain: "key1{M3Q_z4v66LD0}";
 }
 
 let contactInfo: HasEmail | HasPhoneNumber =
@@ -97,8 +97,8 @@ abstract class AbstractContact implements HasEmail, HasPhoneNumber {
  */
  
 class ConcreteContact extends AbstractContact {
-//^^^^^^^ this one line above with the semicolon is key2
-// If you're asking "which line? what semicolon?", then your still reading JS++ OR JS that's way too new for Bobby's Internet Explorer, Find a way to convert it using subtle clues! 
+//^^^^^^^ this one line above with the semicolon = key2
+// If you're asking "which line? what semicolon?", then your still reading JS++ OR JS that's way too new for Bobby's Internet Explorer, Find a way to see the key2 using subtle clues! 
   constructor(
     public phone: number, 
     name: string,
