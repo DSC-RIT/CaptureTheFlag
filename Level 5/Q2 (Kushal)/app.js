@@ -6,6 +6,11 @@ const config = require("./utils/config");
 
 const app = express();
 
+app.use((req, res, next) => {
+  res.cookie("hint", "try postman");
+  next();
+});
+
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
 
