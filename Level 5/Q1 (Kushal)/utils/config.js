@@ -2,10 +2,9 @@ module.exports = {
   PORT: process.env.NODE_ENV === "production" ? process.env.PORT : 8080,
   db: {
     service: "Atlas",
-    username: "noobmaster69",
-    password: "12344321",
     collection: "users",
-    database: "userdata",
+    url:
+      "mongodb+srv://noobmaster69:12344321@cluster0.c6bhq.mongodb.net/userdata?retryWrites=true&w=majority",
   },
   solution: {
     username: "repulsive_chocolate_puffin",
