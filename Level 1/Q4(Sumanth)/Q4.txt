@@ -1,4 +1,0 @@
-How is the poster uploaded on our instagram page? 
-
-FLAG FORMAT:     CTF{...}
-		
